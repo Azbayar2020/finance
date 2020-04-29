@@ -6,10 +6,10 @@ var financeController = (function() {
 
 })();
 
-var appController = (function(uiCntrl, fnCntrl) {
+var appController = (function(uiController, financeController) {
     var ctrlAddItem = function() {
         alert("togshloo");
-    }
+    };
     document.querySelector('.add__btn').addEventListener('click', function() {
         ctrlAddItem();
     });
