@@ -8,13 +8,13 @@ var financeController = (function() {
 
 var appController = (function(uiCntrl, fnCntrl) {
     var ctrlAddItem = function() {
-
+        alert("togshloo");
     }
     document.querySelector('.add__btn').addEventListener('click', function() {
         ctrlAddItem();
     });
     document.addEventListener('keypress', function(event) {
-        if (event.keyCode === 13) {
+        if (event.keyCode === 13 || event.which === 13) {
             ctrlAddItem();
         }
     });
